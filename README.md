@@ -1,2 +1,3 @@
 # haskell-gradescope-autograder
-OSU CS 381 custom Haskell autograder for Gradescope programming assignments.
+
+This is a quick implementation for a basic Haskell autograder for Gradescope.
