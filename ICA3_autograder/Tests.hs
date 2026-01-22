@@ -21,8 +21,8 @@ main = do
         , ("map area f", 2, map Student.area f == map Teacher.area f, show (map Student.area f))
         , ("map (\\x -> move x (2,2)) f", 2, map (\x->Student.move x (2,2)) f == map (\x->Teacher.move x (2,2)) f, show (map (\x->Student.move x (2,2)) f))
         , ("map bbox f", 2, map Student.bbox f == map Teacher.bbox f, show (map Student.bbox f))
-        , ("minX c2", 2, Student.minX c2 == Teacher.minX c2, show (Student.minX c2))
-        , ("move c2 (-1,3)", 2, Student.move c2 (-1,3) == Teacher.move c2 (-1,3), show (Student.move c2 (-1,3)))
+        , ("minX c2", 1, Student.minX c2 == Teacher.minX c2, show (Student.minX c2))
+        , ("move c2 (-1,3)", 1, Student.move c2 (-1,3) == Teacher.move c2 (-1,3), show (Student.move c2 (-1,3)))
         ]
 
       -- Score bookkeeping

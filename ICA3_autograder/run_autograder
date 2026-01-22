@@ -3,8 +3,8 @@
 # move student submission to the source directory
 mv /autograder/submission/Submission.hs /autograder/source/Submission.hs
 
-# compile with ghc
-ghc /autograder/source/tests /autograder/source/Tests.hs
+# compile Tests.hs, Submission.hs, and any other necessary files with ghc into executable Tests
+ghc /autograder/source/Tests.hs /autograder/source/Submission.hs /autograder/source/TestUtils.hs /autograder/source/ICA3Types.hs /autograder/source/ICA3Shapes.hs -o /autograder/source/Tests
 
 # run the tests and output results to results.json
-/autograder/source/tests > /autograder/results/results.json 2>&1
+/autograder/source/Tests > /autograder/results/results.json 2>&1

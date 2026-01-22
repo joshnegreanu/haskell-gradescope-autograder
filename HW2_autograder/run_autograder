@@ -4,7 +4,7 @@
 mv /autograder/submission/Submission.hs /autograder/source/Submission.hs
 
 # compile with ghc
-ghc /autograder/source/tests /autograder/source/Tests.hs
+ghc /autograder/source/Tests.hs
 
 # run the tests and output results to results.json
-/autograder/source/tests > /autograder/results/results.json 2>&1
+/autograder/source/Tests > /autograder/results/results.json 2>&1
