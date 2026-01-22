@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# move student submission to the source directory
+mv /autograder/submission/Submission.hs /autograder/source/Submission.hs
+
+# compile with ghc
+ghc /autograder/source/tests /autograder/source/Tests.hs
+
+# run the tests and output results to results.json
+/autograder/source/tests > /autograder/results/results.json 2>&1
